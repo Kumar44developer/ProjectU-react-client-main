@@ -26,7 +26,12 @@ export const retrieveUser = async (userId) => {
   return apiResponse;
 };
 
+export const retrieveAllUsers = async () => {
+  const getAllUsersEndpoint = `${baseApiUrl}/user/all`;
+  const { data: apiResponse } = await axios.get(getAllUsersEndpoint);
 
+  return apiResponse;
+};
 
 
 
