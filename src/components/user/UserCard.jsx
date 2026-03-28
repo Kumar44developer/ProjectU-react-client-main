@@ -12,7 +12,9 @@ const UserCard = ({ user }) => {
             {user.city} - {user.country}
           </p>
         )}
-
+        <Button variant="secondary" as={NavLink} to={`/edit/${user.id}`}>
+          Edit User
+        </Button>
 
 
 
