@@ -5,3 +5,9 @@ import { createGlobalStyle } from 'styled-components';
 
 import Footer from './Footer';
 import TopNavigation from './TopNavigation';
+
+const BackgroundColor = createGlobalStyle`
+    body {
+        background-color: ${(props) => (props?.light ? '#f2f2f2' : '#ffffff')};
+    }
+`;
