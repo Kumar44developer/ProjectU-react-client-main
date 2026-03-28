@@ -33,6 +33,12 @@ export const retrieveAllUsers = async () => {
   return apiResponse;
 };
 
+export const removeUser = async (userId) => {
+  const removeUserEndpoint = `${baseApiUrl}/user/${userId}`;
+  const { data: apiResponse } = await axios.delete(removeUserEndpoint);
+
+  return apiResponse;
+};
 
 
 
