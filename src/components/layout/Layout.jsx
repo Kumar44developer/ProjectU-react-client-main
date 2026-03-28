@@ -20,3 +20,11 @@ const Layout = ({ children }) => {
         <BackgroundColor light />
         <TopNavigation />
         <ToastContainer />
+        <Container className='mt-5'>{children}</Container>
+      </Container>
+      <Footer />
+    </>
+  );
+};
+
+export default Layout;
