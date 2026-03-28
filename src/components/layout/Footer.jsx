@@ -27,7 +27,14 @@ const Footer = () => {
           <h4>Contact</h4>
           <NavLink className="text-muted" to="/contact">
             Contact
+          </NavLink>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
 
+export default Footer;
 
 
 
