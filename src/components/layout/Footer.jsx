@@ -23,6 +23,10 @@ const Footer = () => {
         </Col>
 
 
+        <Col md={{ span: 3 }}>
+          <h4>Contact</h4>
+          <NavLink className="text-muted" to="/contact">
+            Contact
 
 
 
