@@ -15,7 +15,12 @@ const UserCard = ({ user }) => {
         <Button variant="secondary" as={NavLink} to={`/edit/${user.id}`}>
           Edit User
         </Button>
+      </Card.Body>
+    </Card>
+  );
+};
 
+export default UserCard;
 
 
 
