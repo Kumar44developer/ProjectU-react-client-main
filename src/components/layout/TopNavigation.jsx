@@ -12,6 +12,15 @@ const TopNavigation = () => {
           <Nav className="flex-grow-1 justify-content-end">
             <Nav.Link as={NavLink} to="/create" className="fw-bold">
               Create User
+            </Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    </>
+  );
+};
+
+export default TopNavigation;
 
 
 
