@@ -11,3 +11,12 @@ const BackgroundColor = createGlobalStyle`
         background-color: ${(props) => (props?.light ? '#f2f2f2' : '#ffffff')};
     }
 `;
+
+
+const Layout = ({ children }) => {
+  return (
+    <>
+      <Container fluid className='mb-5'>
+        <BackgroundColor light />
+        <TopNavigation />
+        <ToastContainer />
