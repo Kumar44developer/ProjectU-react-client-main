@@ -17,7 +17,10 @@ const Footer = () => {
         <Col md={{ span: 3, offset: 1 }}>
           <h4>About Us</h4>
 
-
+          <NavLink className="text-muted" to="/about">
+            About Us
+          </NavLink>
+        </Col>
 
 
 
