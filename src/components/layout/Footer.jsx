@@ -14,7 +14,8 @@ const Footer = () => {
           </NavLink>
         </Col>
 
-
+        <Col md={{ span: 3, offset: 1 }}>
+          <h4>About Us</h4>
 
 
 
