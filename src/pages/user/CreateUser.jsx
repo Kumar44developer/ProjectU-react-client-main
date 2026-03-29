@@ -27,7 +27,8 @@ const CreateUser = () => {
     try {
       const response = await userService.createUser(createUserPayload);
 
-
+      if (response?.status) {
+        const userName = response?.user?.name;
 
 
 
