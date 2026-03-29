@@ -10,7 +10,8 @@ import { toast } from "react-toastify";
 const EditUser = () => {
   const { userId } = useParams();
 
-
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
 
 
