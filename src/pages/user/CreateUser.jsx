@@ -37,7 +37,11 @@ const CreateUser = () => {
         setName("");
         setEmail("");
         setCity("");
-
+        setCountry("");
+      } else {
+        toast.warn("An error has occurred.");
+      }
+    } catch (error) {
 
 
 
