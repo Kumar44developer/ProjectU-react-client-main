@@ -59,7 +59,10 @@ const CreateUser = () => {
     }
   };
 
-
+  return (
+    <Layout>
+      <Row className="justify-content-center">
+        <Col lg={6}>
 
 
 
