@@ -7,6 +7,9 @@ import { firstUpperCase } from "../../helpers/string.helper";
 import * as userService from "../../services/user.service";
 
 
+const CreateUser = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
 
 
