@@ -55,7 +55,9 @@ const CreateUser = () => {
         return firstUpperCase(message);
       };
 
-
+      toast.error(getErrorMessage());
+    }
+  };
 
 
 
