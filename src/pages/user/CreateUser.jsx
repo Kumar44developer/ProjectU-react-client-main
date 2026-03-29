@@ -16,7 +16,12 @@ const CreateUser = () => {
   const submitForm = async (event) => {
     event.preventDefault();
 
-
+    const createUserPayload = {
+      name,
+      email,
+      city,
+      country,
+    };
 
 
 
