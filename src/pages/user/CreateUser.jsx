@@ -94,7 +94,12 @@ const CreateUser = () => {
               <Form.Label>Country</Form.Label>
               <Form.Control
                 type="text"
-
+                placeholder="Country"
+                onChange={(fieldElement) =>
+                  setCountry(fieldElement.target.value)
+                }
+              />
+            </Form.Group>
 
 
 
