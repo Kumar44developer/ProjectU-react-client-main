@@ -7,6 +7,8 @@ import { NavLink, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 
 
+const EditUser = () => {
+  const { userId } = useParams();
 
 
 
