@@ -21,7 +21,9 @@ const EditUser = () => {
       const user = await userService.retrieveUser(userId);
       setName(user.name);
       setEmail(user.email);
-
+      setCity(user.city);
+      setCountry(user.country);
+    } catch (err) {
 
 
 
