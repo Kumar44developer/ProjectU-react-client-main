@@ -103,4 +103,10 @@ const CreateUser = () => {
 
 
 
+            <Button variant="primary" type="submit" onClick={submitForm}>
+              Add User
+            </Button>
+        
+
+
 
