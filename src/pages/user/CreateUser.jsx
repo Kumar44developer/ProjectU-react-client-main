@@ -106,6 +106,14 @@ const CreateUser = () => {
             <Button variant="primary" type="submit" onClick={submitForm}>
               Add User
             </Button>
+          </Form>
+        </Col>
+      </Row>
+    </Layout>
+  );
+};
+
+export default CreateUser;        
         
 
 
