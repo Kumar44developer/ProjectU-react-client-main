@@ -1,1 +1,2 @@
-
+import Layout from "../../components/layout/Layout";
+import { Col, Row } from "react-bootstrap";
