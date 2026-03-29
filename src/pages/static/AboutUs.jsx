@@ -12,7 +12,12 @@ const AboutUs = () => {
           <br />Happy Learning
         </div>
       </Row>
+      </Row>
+    </Layout>
+  );
+};
 
+export default AboutUs;
 
 
 
