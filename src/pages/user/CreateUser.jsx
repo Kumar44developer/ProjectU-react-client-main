@@ -24,6 +24,8 @@ const CreateUser = () => {
     };
 
 
+    try {
+      const response = await userService.createUser(createUserPayload);
 
 
 
