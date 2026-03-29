@@ -10,7 +10,14 @@ const Contact = () => {
         <Col md={10}>
           <p class="text-center">
             Contact me at <span className="fst-italic">MY EMAIL ADDRESS</span>
+          </p>
+        </Col>
+      </Row>
+    </Layout>
+  );
+};
 
+export default Contact;
 
 
 
