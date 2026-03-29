@@ -31,6 +31,12 @@ const CreateUser = () => {
         const userName = response?.user?.name;
 
 
+        toast.success(`User ${userName} has been created!`);
+
+        // Clear states
+        setName("");
+        setEmail("");
+        setCity("");
 
 
 
