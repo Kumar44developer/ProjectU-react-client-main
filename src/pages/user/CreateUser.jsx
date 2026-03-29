@@ -42,7 +42,12 @@ const CreateUser = () => {
         toast.warn("An error has occurred.");
       }
     } catch (error) {
-
+      const getErrorMessage = () => {
+        const {
+          data: {
+            errors: { body },
+          },
+        } = error.response;
 
 
 
