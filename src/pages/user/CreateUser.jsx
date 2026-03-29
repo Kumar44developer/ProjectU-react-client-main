@@ -63,7 +63,12 @@ const CreateUser = () => {
     <Layout>
       <Row className="justify-content-center">
         <Col lg={6}>
-
+              <Form.Control
+                type="text"
+                placeholder="Name"
+                onChange={(fieldElement) => setName(fieldElement.target.value)}
+              />
+            </Form.Group>
 
 
 
