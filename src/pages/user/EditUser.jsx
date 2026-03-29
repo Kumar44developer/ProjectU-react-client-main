@@ -16,6 +16,11 @@ const EditUser = () => {
   const [country, setCountry] = useState("");
 
 
+  const populateUserFields = async () => {
+    try {
+      const user = await userService.retrieveUser(userId);
+      setName(user.name);
+      setEmail(user.email);
 
 
 
