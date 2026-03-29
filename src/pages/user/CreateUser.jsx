@@ -13,7 +13,8 @@ const CreateUser = () => {
   const [city, setCity] = useState("");
   const [country, setCountry] = useState("");
 
-
+  const submitForm = async (event) => {
+    event.preventDefault();
 
 
 
