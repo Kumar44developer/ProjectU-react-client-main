@@ -90,7 +90,10 @@ const CreateUser = () => {
               />
             </Form.Group>
 
-
+            <Form.Group className="mb-3">
+              <Form.Label>Country</Form.Label>
+              <Form.Control
+                type="text"
 
 
 
