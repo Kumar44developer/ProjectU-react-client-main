@@ -49,7 +49,11 @@ const CreateUser = () => {
           },
         } = error.response;
 
+        const message = body[0]?.message;
 
+        // Uppercase the first letter of the message
+        return firstUpperCase(message);
+      };
 
 
 
