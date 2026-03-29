@@ -10,7 +10,8 @@ import * as userService from "../../services/user.service";
 const CreateUser = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-
+  const [city, setCity] = useState("");
+  const [country, setCountry] = useState("");
 
 
 
