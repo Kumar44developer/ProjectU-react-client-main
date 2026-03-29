@@ -8,7 +8,10 @@ const AboutUs = () => {
       <h3 class="text-center">About Us</h3>
       <Row class="justify-content-center">
         <div class="text-center">
-
+          About us. Learning React, NodeJS and ExpressJS is so fun.
+          <br />Happy Learning
+        </div>
+      </Row>
 
 
 
