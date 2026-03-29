@@ -24,7 +24,10 @@ const EditUser = () => {
       setCity(user.city);
       setCountry(user.country);
     } catch (err) {
-
+      console.error(err.message);
+      window.location.href = "/";
+    }
+  };
 
 
 
