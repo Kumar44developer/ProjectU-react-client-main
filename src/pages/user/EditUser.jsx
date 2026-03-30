@@ -89,7 +89,9 @@ const EditUser = () => {
 
             <Form.Group className="mb-3">
               <Form.Label>Email</Form.Label>
-
+              <Form.Control
+                type="email"
+                value={email}
 
 
 
