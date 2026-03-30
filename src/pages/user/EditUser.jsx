@@ -82,7 +82,10 @@ const EditUser = () => {
               <Form.Label>Name</Form.Label>
               <Form.Control
                 type="text"
-
+                value={name}
+                onChange={(fieldElement) => setName(fieldElement.target.value)}
+              />
+            </Form.Group>
 
 
 
