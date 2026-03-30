@@ -122,5 +122,7 @@ const EditUser = () => {
               Update
             </Button>
 
-
+            <Button
+              variant="danger"
+              as={NavLink}
             
