@@ -41,6 +41,8 @@ const EditUser = () => {
 
 
 
+    try {
+      const response = await userService.editUser(userId, payload);
 
 
 
