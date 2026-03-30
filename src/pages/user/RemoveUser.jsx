@@ -20,7 +20,10 @@ const RemoveUser = () => {
       }
 
 
-
+      setTimeout(() => {
+        window.location.href = "/";
+      }, DELAY_BEFORE_REDIRECTION_MS);
+    } catch (error) {
 
 
 
