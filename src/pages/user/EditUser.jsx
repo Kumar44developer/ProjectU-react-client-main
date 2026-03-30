@@ -49,7 +49,9 @@ const EditUser = () => {
         const userName = response.user.name;
         toast.success(`${userName} has been updated.`);
       } else {
-
+        toast.warn(`The user couldn't be updated.`);
+      }
+    } catch (error) {
 
 
 
