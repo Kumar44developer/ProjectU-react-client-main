@@ -110,4 +110,9 @@ const EditUser = () => {
               <Form.Label>Country</Form.Label>
               <Form.Control
                 type="text"
-
+                value={country}
+                onChange={(fieldElement) =>
+                  setCountry(fieldElement.target.value)
+                }
+              />
+            </Form.Group>
