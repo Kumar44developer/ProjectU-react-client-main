@@ -72,6 +72,12 @@ const EditUser = () => {
   }, [userId]);
 
 
+  return (
+    <Layout>
+      <h3 className="text-center">Edit User</h3>
+      <Row className="justify-content-center">
+        <Col lg={6}>
+          <Form>
 
 
 
