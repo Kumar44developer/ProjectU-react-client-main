@@ -52,7 +52,13 @@ const EditUser = () => {
         toast.warn(`The user couldn't be updated.`);
       }
     } catch (error) {
-
+      const retrieveErrorMessage = () => {
+        const {
+          data: {
+            errors: { body },
+          },
+        } = error.response;
+        const errorMessage = body[0]?.message;
 
 
 
