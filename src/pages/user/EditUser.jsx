@@ -92,7 +92,9 @@ const EditUser = () => {
               <Form.Control
                 type="email"
                 value={email}
-
+                onChange={(fieldElement) => setEmail(fieldElement.target.value)}
+              />
+            </Form.Group>
 
 
 
