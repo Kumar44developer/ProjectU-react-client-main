@@ -67,7 +67,9 @@ const EditUser = () => {
     }
   };
 
-
+  useEffect(() => {
+    populateUserFields();
+  }, [userId]);
 
 
 
