@@ -116,3 +116,11 @@ const EditUser = () => {
                 }
               />
             </Form.Group>
+
+
+            <Button variant="primary" onClick={submitForm} className="m-1">
+              Update
+            </Button>
+
+
+            
