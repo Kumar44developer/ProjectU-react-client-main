@@ -128,3 +128,7 @@ const EditUser = () => {
               to={`/remove/${userId}`}
               className="m-1"
             >            
+              Remove
+            </Button>
+          </Form>
+        </Col>
