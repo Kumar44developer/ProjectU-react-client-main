@@ -24,7 +24,10 @@ const RemoveUser = () => {
         window.location.href = "/";
       }, DELAY_BEFORE_REDIRECTION_MS);
     } catch (error) {
-
+      toast.error(`User cannot be removed.`);
+      console.error(error.message);
+    }
+  };
 
 
 
