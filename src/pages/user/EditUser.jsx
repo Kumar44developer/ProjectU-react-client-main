@@ -87,7 +87,8 @@ const EditUser = () => {
               />
             </Form.Group>
 
-
+            <Form.Group className="mb-3">
+              <Form.Label>Email</Form.Label>
 
 
 
