@@ -7,7 +7,11 @@ import { toast } from "react-toastify";
 const RemoveUser = () => {
   const DELAY_BEFORE_REDIRECTION_MS = 1000; // 1 second
 
+  const { userId } = useParams();
 
+  const submitAction = async () => {
+    try {
+      const response = await userService.removeUser(userId);
 
 
 
