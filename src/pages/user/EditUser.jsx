@@ -45,6 +45,10 @@ const EditUser = () => {
       const response = await userService.editUser(userId, payload);
 
 
+      if (response?.status) {
+        const userName = response.user.name;
+        toast.success(`${userName} has been updated.`);
+      } else {
 
 
 
