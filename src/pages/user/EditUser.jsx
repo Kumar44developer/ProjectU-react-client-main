@@ -125,4 +125,6 @@ const EditUser = () => {
             <Button
               variant="danger"
               as={NavLink}
-            
+              to={`/remove/${userId}`}
+              className="m-1"
+            >            
