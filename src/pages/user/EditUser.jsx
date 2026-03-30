@@ -78,7 +78,10 @@ const EditUser = () => {
       <Row className="justify-content-center">
         <Col lg={6}>
           <Form>
-
+            <Form.Group className="mb-3">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                type="text"
 
 
 
