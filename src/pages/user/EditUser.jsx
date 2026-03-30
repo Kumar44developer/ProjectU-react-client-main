@@ -32,7 +32,12 @@ const EditUser = () => {
   const submitForm = async (event) => {
     event.preventDefault();
 
-
+    const payload = {
+      name,
+      email,
+      city,
+      country,
+    };
 
 
 
