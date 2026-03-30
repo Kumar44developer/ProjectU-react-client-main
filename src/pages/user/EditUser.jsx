@@ -60,7 +60,12 @@ const EditUser = () => {
         } = error.response;
         const errorMessage = body[0]?.message;
 
+        return firstUpperCase(errorMessage);
+      };
 
+      toast.error(retrieveErrorMessage());
+    }
+  };
 
 
 
