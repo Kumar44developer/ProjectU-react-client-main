@@ -132,3 +132,9 @@ const EditUser = () => {
             </Button>
           </Form>
         </Col>
+      </Row>
+    </Layout>
+  );
+};
+
+export default EditUser;
