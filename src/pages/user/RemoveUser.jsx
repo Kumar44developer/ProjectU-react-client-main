@@ -13,6 +13,11 @@ const RemoveUser = () => {
     try {
       const response = await userService.removeUser(userId);
 
+      if (response?.status) {
+        toast.success("User has been removed.");
+      } else {
+        toast.warn(`User couldn't be removed.`);
+      }
 
 
 
