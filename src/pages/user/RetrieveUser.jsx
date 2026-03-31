@@ -20,3 +20,6 @@ const RetrieveUser = () => {
   };
 
   
+  useEffect(() => {
+    fetchUser();
+  }, [userId]);
