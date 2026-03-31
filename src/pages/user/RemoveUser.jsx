@@ -30,6 +30,9 @@ const RemoveUser = () => {
   };
 
 
+  const cancelAction = () => {
+    window.location.href = "/";
+  };
 
 
 
