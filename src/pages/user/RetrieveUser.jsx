@@ -9,3 +9,14 @@ const RetrieveUser = () => {
   const { userId } = useParams();
 
   const [user, setUser] = useState({});
+
+  const fetchUser = async () => {
+    try {
+      const user = await userService.retrieveUser(userId);
+      setUser(user);
+    } catch (err) {
+      setUser(null);
+    }
+  };
+
+  
