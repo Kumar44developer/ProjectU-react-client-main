@@ -37,3 +37,8 @@ const RetrieveUser = () => {
                 <p>{user.email}</p>
                 {user.city && user.country && (
                   <p>
+                    {user.city} - {user.country}
+                  </p>
+                )}
+              </Card.Body>
+            </Card>
