@@ -23,3 +23,12 @@ const RetrieveUser = () => {
   useEffect(() => {
     fetchUser();
   }, [userId]);
+
+
+
+  return (
+    <Layout>
+      {user ? (
+        <Row className="justify-content-center">
+
+  
