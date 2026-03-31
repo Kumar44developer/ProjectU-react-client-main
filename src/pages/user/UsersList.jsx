@@ -29,7 +29,9 @@ const UsersList = () => {
     }
   };
 
-
+  useEffect(() => {
+    fetchUsers();
+  }, []);
 
 
 
