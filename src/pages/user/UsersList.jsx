@@ -16,7 +16,9 @@ const UsersList = () => {
 
       const users = await userService.retrieveAllUsers();
       setUsers(users);
-
+    } catch (error) {
+      const retrieveErrorMessage = () => {
+        const apiErrorMessage = error?.response?.data?.message;
 
 
 
