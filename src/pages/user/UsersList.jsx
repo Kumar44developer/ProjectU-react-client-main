@@ -34,6 +34,12 @@ const UsersList = () => {
   }, []);
 
 
+  return (
+    <Layout>
+      {isLoading ? (
+        <div className='text-center'>
+          <List />
+        </div>
 
 
 
