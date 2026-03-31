@@ -40,7 +40,10 @@ const RemoveUser = () => {
       <h4 className="text-center">Are you sure to remove #{userId} user?</h4>
       <Row className="justify-content-center">
         <Col md={4}>
-
+          <Form className="mt-4">
+            <Button variant="danger" onClick={submitAction} className="m-1">
+              Yes, remove this user
+            </Button>
 
 
 
