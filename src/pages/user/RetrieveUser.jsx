@@ -33,4 +33,7 @@ const RetrieveUser = () => {
          <Col lg={5}>
             <h3 className="text-center mb-3">{user.name}</h3>
             <Card>
-  
+                <Card.Body className="text-center">
+                <p>{user.email}</p>
+                {user.city && user.country && (
+                  <p>
