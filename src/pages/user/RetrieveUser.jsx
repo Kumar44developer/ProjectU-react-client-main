@@ -47,3 +47,8 @@ const RetrieveUser = () => {
       ) : (
         <p className="text-center text-danger fw-bold">User cannot be found.</p>
       )}
+    </Layout>
+  );
+};
+
+export default RetrieveUser;
