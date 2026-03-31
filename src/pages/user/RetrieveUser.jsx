@@ -5,3 +5,7 @@ import { useParams } from "react-router-dom";
 
 import Layout from "../../components/layout/Layout";
 import * as userService from "../../services/user.service";
+const RetrieveUser = () => {
+  const { userId } = useParams();
+
+  const [user, setUser] = useState({});
