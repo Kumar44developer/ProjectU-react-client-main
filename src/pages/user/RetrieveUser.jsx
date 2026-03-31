@@ -30,5 +30,7 @@ const RetrieveUser = () => {
     <Layout>
       {user ? (
         <Row className="justify-content-center">
-
+         <Col lg={5}>
+            <h3 className="text-center mb-3">{user.name}</h3>
+            <Card>
   
