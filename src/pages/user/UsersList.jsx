@@ -40,7 +40,10 @@ const UsersList = () => {
         <div className='text-center'>
           <List />
         </div>
-
+      ) : errorMessage ? (
+        <h3 className='text-center text-danger fw-bold'>{errorMessage}</h3>
+      ) : (
+        <>
 
 
 
