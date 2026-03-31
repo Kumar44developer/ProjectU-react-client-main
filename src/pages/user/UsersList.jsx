@@ -11,7 +11,11 @@ const UsersList = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const fetchUsers = async () => {
+    try {
+      setIsLoading(true);
 
+      const users = await userService.retrieveAllUsers();
+      setUsers(users);
 
 
 
