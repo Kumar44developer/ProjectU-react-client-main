@@ -42,3 +42,8 @@ const RetrieveUser = () => {
                 )}
               </Card.Body>
             </Card>
+          </Col>
+        </Row>
+      ) : (
+        <p className="text-center text-danger fw-bold">User cannot be found.</p>
+      )}
