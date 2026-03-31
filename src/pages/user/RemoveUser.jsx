@@ -35,7 +35,11 @@ const RemoveUser = () => {
   };
 
 
-
+  return (
+    <Layout>
+      <h4 className="text-center">Are you sure to remove #{userId} user?</h4>
+      <Row className="justify-content-center">
+        <Col md={4}>
 
 
 
