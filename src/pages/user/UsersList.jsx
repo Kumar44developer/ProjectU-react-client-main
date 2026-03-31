@@ -20,6 +20,10 @@ const UsersList = () => {
       const retrieveErrorMessage = () => {
         const apiErrorMessage = error?.response?.data?.message;
 
+        // Null Coalescing Operator
+        return apiErrorMessage ?? 'Error while connecting to the server';
+      };
+      setErrorMessage(retrieveErrorMessage());
 
 
 
