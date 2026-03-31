@@ -47,6 +47,10 @@ const RemoveUser = () => {
 
 
 
+            <Button variant="secondary" onClick={cancelAction} className="m-1">
+              No, revert my action
+            </Button>
+          </Form>
 
 
 
