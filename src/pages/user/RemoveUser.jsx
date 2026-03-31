@@ -51,7 +51,13 @@ const RemoveUser = () => {
               No, revert my action
             </Button>
           </Form>
+        </Col>
+      </Row>
+    </Layout>
+  );
+};
 
+export default RemoveUser;
 
 
 
