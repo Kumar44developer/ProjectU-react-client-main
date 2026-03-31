@@ -4,3 +4,51 @@ import * as userService from '../../services/user.service';
 import React, { useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { List } from 'react-content-loader';
+
+const UsersList = () => {
+  const [users, setUsers] = useState({}); 
+  const [errorMessage, setErrorMessage] = useState(null);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
