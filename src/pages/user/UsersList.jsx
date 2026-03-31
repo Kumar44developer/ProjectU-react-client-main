@@ -24,7 +24,10 @@ const UsersList = () => {
         return apiErrorMessage ?? 'Error while connecting to the server';
       };
       setErrorMessage(retrieveErrorMessage());
-
+    } finally {
+      setIsLoading(false); // At this stage, we can stop the loader
+    }
+  };
 
 
 
