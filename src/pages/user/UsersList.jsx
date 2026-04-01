@@ -44,7 +44,10 @@ const UsersList = () => {
         <h3 className='text-center text-danger fw-bold'>{errorMessage}</h3>
       ) : (
         <>
-
+          <h4 className='text-center mb-3'>Users</h4>
+          <Row className='justify-content-center'>
+            {Object.values(users).map((user) => (
+              <Col key={user.id} lg={4} className='p-1'>
 
 
 
