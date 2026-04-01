@@ -8,3 +8,10 @@ import UsersList from "./pages/user/UsersList";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.min.css";
+
+
+
+const App = () => {
+  return (
+    <>
+      <BrowserRouter>
