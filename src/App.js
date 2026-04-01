@@ -19,3 +19,8 @@ const App = () => {
           <Route path="/create" element={<CreateUser />} />
           <Route path="/edit/:userId" element={<EditUser />} />
           <Route path="/remove/:userId" element={<RemoveUser />} />
+          <Route path="/:userId" element={<RetrieveUser />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<AboutUs />} />
+        </Routes>
+      </BrowserRouter>
