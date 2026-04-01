@@ -53,6 +53,12 @@ const UsersList = () => {
             ))}
           </Row>
         </>
+      )}
+    </Layout>
+  );
+};
+
+export default UsersList;
 
 
 
