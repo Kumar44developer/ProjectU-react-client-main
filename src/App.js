@@ -24,3 +24,8 @@ const App = () => {
           <Route path="/about" element={<AboutUs />} />
         </Routes>
       </BrowserRouter>
+    </>
+  );
+};
+
+export default App;
