@@ -48,7 +48,11 @@ const UsersList = () => {
           <Row className='justify-content-center'>
             {Object.values(users).map((user) => (
               <Col key={user.id} lg={4} className='p-1'>
-
+                <UserCard user={user} />
+              </Col>
+            ))}
+          </Row>
+        </>
 
 
 
