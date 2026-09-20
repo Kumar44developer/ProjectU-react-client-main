@@ -15,6 +15,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
+        <Routes>
           <Route path="/" element={<UsersList />} />
           <Route path="/create" element={<CreateUser />} />
           <Route path="/edit/:userId" element={<EditUser />} />

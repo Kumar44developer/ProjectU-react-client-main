@@ -16,18 +16,22 @@ const EditUser = () => {
   const [country, setCountry] = useState("");
 
 
-  const populateUserFields = async () => {
-    try {
-      const user = await userService.retrieveUser(userId);
-      setName(user.name);
-      setEmail(user.email);
-      setCity(user.city);
-      setCountry(user.country);
-    } catch (err) {
-      console.error(err.message);
-      window.location.href = "/";
-    }
-  };
+  useEffect(() => {
+    const populateUserFields = async () => {
+      try {
+        const user = await userService.retrieveUser(userId);
+        setName(user.name);
+        setEmail(user.email);
+        setCity(user.city);
+        setCountry(user.country);
+      } catch (err) {
+        console.error(err.message);
+        window.location.href = "/";
+      }
+    };
+
+    populateUserFields();
+  }, [userId]);
 
   const submitForm = async (event) => {
     event.preventDefault();
@@ -39,11 +43,8 @@ const EditUser = () => {
       country,
     };
 
-
-
     try {
       const response = await userService.editUser(userId, payload);
-
 
       if (response?.status) {
         const userName = response.user.name;
@@ -53,12 +54,12 @@ const EditUser = () => {
       }
     } catch (error) {
       const retrieveErrorMessage = () => {
-        const {
-          data: {
-            errors: { body },
-          },
-        } = error.response;
-        const errorMessage = body[0]?.message;
+        const body = error?.response?.data?.errors?.body;
+        const errorMessage =
+          body?.[0]?.message ||
+          error?.response?.data?.message ||
+          error?.message ||
+          "An error has occurred.";
 
         return firstUpperCase(errorMessage);
       };
@@ -66,11 +67,6 @@ const EditUser = () => {
       toast.error(retrieveErrorMessage());
     }
   };
-
-  useEffect(() => {
-    populateUserFields();
-  }, [userId]);
-
 
   return (
     <Layout>

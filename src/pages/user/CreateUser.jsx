@@ -43,13 +43,12 @@ const CreateUser = () => {
       }
     } catch (error) {
       const getErrorMessage = () => {
-        const {
-          data: {
-            errors: { body },
-          },
-        } = error.response;
-
-        const message = body[0]?.message;
+        const body = error?.response?.data?.errors?.body;
+        const message =
+          body?.[0]?.message ||
+          error?.response?.data?.message ||
+          error?.message ||
+          "An error has occurred.";
 
         // Uppercase the first letter of the message
         return firstUpperCase(message);
@@ -63,9 +62,13 @@ const CreateUser = () => {
     <Layout>
       <Row className="justify-content-center">
         <Col lg={6}>
+          <Form onSubmit={submitForm}>
+            <Form.Group className="mb-3">
+              <Form.Label>Name</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Name"
+                value={name}
                 onChange={(fieldElement) => setName(fieldElement.target.value)}
               />
             </Form.Group>
@@ -73,19 +76,19 @@ const CreateUser = () => {
             <Form.Group className="mb-3">
               <Form.Label>Email</Form.Label>
               <Form.Control
-              <Form.Control
                 type="email"
                 placeholder="Email"
+                value={email}
                 onChange={(fieldElement) => setEmail(fieldElement.target.value)}
               />
             </Form.Group>
-
 
             <Form.Group className="mb-3">
               <Form.Label>City</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="City"
+                value={city}
                 onChange={(fieldElement) => setCity(fieldElement.target.value)}
               />
             </Form.Group>
@@ -95,15 +98,14 @@ const CreateUser = () => {
               <Form.Control
                 type="text"
                 placeholder="Country"
+                value={country}
                 onChange={(fieldElement) =>
                   setCountry(fieldElement.target.value)
                 }
               />
             </Form.Group>
 
-
-
-            <Button variant="primary" type="submit" onClick={submitForm}>
+            <Button variant="primary" type="submit">
               Add User
             </Button>
           </Form>
