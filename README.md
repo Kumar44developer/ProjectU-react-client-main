@@ -109,42 +109,42 @@ The application features full error resilience, loading state skeletons with Rea
 ```
 project Number4/
 ├── public/
-│   └── index.html             # HTML entry template with root mount container
+│   └── index.html            
 ├── src/
 │   ├── components/
 │   │   ├── layout/
-│   │   │   ├── Footer.jsx     # Site footer with categorical navigation links
-│   │   │   ├── Layout.jsx     # Master page layout wrapper
-│   │   │   ├── Layout.test.js # Test suite for Layout component
-│   │   │   └── TopNavigation.jsx # Top navbar with active route links
+│   │   │   ├── Footer.jsx   
+│   │   │   ├── Layout.jsx    
+│   │   │   ├── Layout.test.js 
+│   │   │   └── TopNavigation.jsx 
 │   │   ├── services/
-│   │   │   └── user.service.js # Re-export for backward compatibility
+│   │   │   └── user.service.js
 │   │   └── user/
-│   │       └── UserCard.jsx   # Profile summary card with action buttons
+│   │       └── UserCard.jsx   
 │   ├── helpers/
-│   │   └── string.helper.js   # Text transformation utility functions
+│   │   └── string.helper.js  
 │   ├── pages/
 │   │   ├── static/
-│   │   │   ├── AboutUs.jsx    # About page view
-│   │   │   └── Contact.jsx    # Contact support page view
+│   │   │   ├── AboutUs.jsx    
+│   │   │   └── Contact.jsx    
 │   │   └── user/
-│   │       ├── CreateUser.jsx # New user onboarding form
-│   │       ├── EditUser.jsx   # Existing user modification form
-│   │       ├── RemoveUser.jsx # User deletion confirmation dialog
-│   │       ├── RetrieveUser.jsx # Detailed single user profile display
-│   │       └── UsersList.jsx  # All users grid view with skeleton loader
+│   │       ├── CreateUser.jsx  
+│   │       ├── EditUser.jsx 
+│   │       ├── RemoveUser.jsx
+│   │       ├── RetrieveUser.jsx 
+│   │       └── UsersList.jsx 
 │   ├── services/
-│   │   └── user.service.js    # Centralized Axios API service layer
-│   ├── App.js                 # Application route registry
-│   ├── App.test.js            # Integration tests for main app container
-│   ├── index.css              # Global styles
-│   ├── index.js               # React 18 createRoot bootstrap entry
-│   ├── reportWebVitals.js     # Web vitals performance monitoring
-│   └── setupTests.js          # Jest DOM matchers configuration
-├── .gitignore                 # Files excluded from version control
-├── package.json               # Project dependencies and script definitions
-├── package-lock.json          # Locked dependency tree
-└── README.md                  # Project documentation
+│   │   └── user.service.js  
+│   ├── App.js                
+│   ├── App.test.js            
+│   ├── index.css            
+│   ├── index.js              
+│   ├── reportWebVitals.js     
+│   └── setupTests.js          
+├── .gitignore                 
+├── package.json               
+├── package-lock.json         
+└── README.md                  
 ```
 
 ---
